@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        .Color1{
+            background-color: aliceblue;
+        }
+
+    </style>
+
+        <div class="Color1">
+            <h1>Color1</h1>
+        </div>
+        
+        <div class="Color2">
+            <h1>Color2</h1>
+            </div>
+            
+        <div class="Color3">
+            <h1>Color3</h1>  
+        </div>
+    
+        <button id="randomColor" type="submit">CLICK RANDOM COLOR</button>
+
+    <script>
+
+        const color1 = document.querySelector('.Color1');
+        const h1Element = color1.querySelector('h1');
+
+        const color2 = document.querySelector('.Color2');
+        const h1Element2 = color2.querySelector('h1');
+
+        const color3 = document.querySelector('.Color3');
+        const h1Element3 = color3.querySelector('h1');
+
+        const randomColor = document.getElementById('randomColor');
+        
+
+
+        function randomColor1(){    
+
+            let randomOne = Math.floor(Math.random() * 7);
+
+            if (randomOne < 1) {
+                    // 60% chance of getting 0
+                    randomOne = 0;
+                } else {
+                    // 40% chance of getting a non-zero value (1 to 6)
+                    randomOne = Math.floor(Math.random() * 6) + 1;
+                }
+
+            switch(randomOne){
+                case 0: 
+                color1.style.backgroundColor = "white";
+                h1Element.innerHTML = "WHITE";
+               // console.log(`"THE COLOR IS EMPTY:" ${randomOne}`); 
+               break;
+
+                case 1: 
+                color1.style.backgroundColor = "blue";
+                h1Element.innerHTML = "BLUE";
+               // console.log(`"THE COLOR IS BLUE:" ${randomOne}`); 
+               break;
+
+                case 2: 
+                color1.style.backgroundColor = "yellow";
+                h1Element.innerHTML = "YELLOW";
+               // console.log(`"THE COLOR IS YELLOW:" ${randomOne}`); 
+               break;
+
+                case 3: 
+                color1.style.backgroundColor = "green";
+                h1Element.innerHTML = "GREEN";
+               // console.log(`"THE COLOR IS GREEN:" ${randomOne}`); 
+               break;
+
+                case 4: 
+                color1.style.backgroundColor = "orange";
+                h1Element.innerHTML = "ORANGE";
+                //console.log(`"THE COLOR IS ORANGE:" ${randomOne}`);
+                break;
+
+                case 5: 
+                color1.style.backgroundColor = "pink";
+                h1Element.innerHTML = "PINK";
+               // console.log(`"THE COLOR IS PINK:" ${randomOne}`); 
+               break;
+
+                case 6: 
+                color1.style.backgroundColor = "red";
+                h1Element.innerHTML = "RED";
+                //console.log(`"THE COLOR IS RED:" ${randomOne}`); 
+                break;
+                }
+        }
+
+        function randomColor2(){
+
+
+            let randomTwo = Math.floor(Math.random() * 7);
+            
+            if (randomTwo < 1) {
+                // 60% chance of getting 0
+                randomTwo = 0;
+            } else {
+                // 40% chance of getting a non-zero value (1 to 6)
+                randomTwo = Math.floor(Math.random() * 6) + 1;
+            }
+            
+            switch(randomTwo){
+                case 0: 
+                color2.style.backgroundColor = "white";
+                h1Element2.innerHTML = "WHITE";
+                //console.log(`"THE COLOR IS EMPTY:" ${randomTwo}`); 
+                break;
+
+                case 1: 
+                color2.style.backgroundColor = "blue";
+                h1Element2.innerHTML = "BLUE";
+                //console.log(`"THE COLOR IS BLUE:" ${randomTwo}`); 
+                break;
+
+                case 2: 
+                color2.style.backgroundColor = "yellow";
+                h1Element2.innerHTML = "YELLOW";
+                //console.log(`"THE COLOR IS YELLOW:" ${randomTwo}`); 
+                break;
+
+                case 3: 
+                color2.style.backgroundColor = "green";
+                h1Element2.innerHTML = "GREEN";
+               // console.log(`"THE COLOR IS GREEN:" ${randomTwo}`); 
+               break;
+
+                case 4: 
+                color2.style.backgroundColor = "orange";
+                h1Element2.innerHTML = "ORANGE";
+               // console.log(`"THE COLOR IS ORANGE:" ${randomTwo}`); 
+               break;
+
+                case 5: 
+                color2.style.backgroundColor = "pink";
+                h1Element2.innerHTML = "PINK";
+                //console.log(`"THE COLOR IS PINK:" ${randomTwo}`);
+                 break;
+
+                case 6: 
+                color2.style.backgroundColor = "red";
+                h1Element2.innerHTML = "RED";
+                //console.log(`"THE COLOR IS RED:" ${randomTwo}`); 
+                break;
+                }
+        }
+
+        function randomColor3(){
+
+            
+            let randomThree = Math.floor(Math.random() * 7);
+
+            if (randomThree < 1) {
+                // 30% chance of getting 0
+                randomThree = 0;
+            } else {
+                // 40% chance of getting a non-zero value (1 to 6)
+                randomThree = Math.floor(Math.random() * 6) + 1;
+            }
+
+            switch(randomThree){
+                case 0: 
+                color3.style.backgroundColor = "white";
+                h1Element3.innerHTML = "WHITE";
+                //console.log(`"THE COLOR IS EMPTY:" ${randomThree}`); 
+                break;
+
+                case 1: 
+                color3.style.backgroundColor = "blue";
+                h1Element3.innerHTML = "BLUE";
+               // console.log(`"THE COLOR IS BLUE:" ${randomThree}`); 
+               break;
+
+                case 2: 
+                color3.style.backgroundColor = "yellow";
+                h1Element3.innerHTML = "YELLOW";
+                //console.log(`"THE COLOR IS YELLOW:" ${randomThree}`); 
+                break;
+
+                case 3: 
+                color3.style.backgroundColor = "green";
+                h1Element3.innerHTML = "GREEN";
+               // console.log(`"THE COLOR IS GREEN:" ${randomThree}`); 
+               break;
+
+                case 4: 
+                color3.style.backgroundColor = "orange";
+                h1Element3.innerHTML = "ORANGE";
+               // console.log(`"THE COLOR IS ORANGE:" ${randomThree}`); 
+               break;
+
+                case 5: 
+                color3.style.backgroundColor = "pink";
+                h1Element3.innerHTML = "PINK";
+               // console.log(`"THE COLOR IS PINK:" ${randomThree}`); 
+               break;
+
+                case 6: 
+                color3.style.backgroundColor = "red";
+                h1Element3.innerHTML = "RED";
+               // console.log(`"THE COLOR IS RED:" ${randomThree}`); 
+               break;
+                }
+        }
+
+        
+      
+  
+        randomColor.addEventListener('click', randomColor1);
+        randomColor.addEventListener('click', randomColor2);
+        randomColor.addEventListener('click', randomColor3);
+
+       
+
+       
+     
+    </script>
+</body>
+</html>
