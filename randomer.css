@@ -1,0 +1,22 @@
+
+body{
+    background:gray;
+}
+
+.Color1{
+    background-color: aliceblue;
+    display: inline-block;
+}
+.Color2{
+    background-color: aliceblue;
+    display: inline-block;
+}
+.Color3{
+    background-color: aliceblue;
+    display: inline-block;
+}
+
+#randomColor{
+    display: block;
+}
+
